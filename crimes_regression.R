@@ -2,7 +2,6 @@
 # crimes violents aux Etats-Unis (ViolentCrimesPerPop) du dataset
 # les modèles seront comparés sur la base RMSE évaluée par 10-fold CV
 
-setwd("/home/nathan/fac/m1/s2/apprentissage_supervise")
 file <- 'violent_crimes.txt'
 violent_crimes <- read.csv(file, header=FALSE)
 violent_crimes[violent_crimes == "?"] <- NA # remplace "?" par NA
